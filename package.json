@@ -1,0 +1,35 @@
+{
+  "name": "tradecore-task",
+  "version": "1.0.0",
+  "description": "main-package-json",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "angular-moment": "^1.0.1",
+    "copy": "*",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "bootstrap": "*",
+    "browser-sync": "*",
+    "del": "*",
+    "graceful-fs": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-cssnano": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-livereload": "*",
+    "gulp-notify": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "jshint": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marko Stanicic",
+  "license": "ISC"
+}

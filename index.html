@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>Car Purchases App</title>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <!-- Mobile view media queries -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- include bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- include fontawesome -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- include material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- include authors css -->
+    <link rel="stylesheet" type="text/css" href="dist/styles/main.min.css">
+
+    <!-- include Angularjs -->
+    <script src="dist/scripts/lib/angular/angular.min.js"></script>
+    <script src="dist/scripts/lib/angular/angular-route.min.js"></script>
+
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/angular-moment/angular-moment.js"></script>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+    <!-- include authors js -->
+    <script type="text/javascript" src="assets/scripts/script.js"></script>
+
+    <!-- include authors js -->
+    <script type="text/javascript" src="dist/scripts/main.js"></script>
+
+    <!-- include Controllers js -->
+    <script type="text/javascript" src="components/tab/tabCtrl.js"></script>
+    <script type="text/javascript" src="components/user-list/userListCtrl.js"></script>
+    <script type="text/javascript" src="components/car-purchases/carPurchasesCtrl.js"></script>
+    <script type="text/javascript" src="components/file-uploads/fileUploadsCtrl.js"></script>
+
+    <!-- include Services js -->
+    <script type="text/javascript" src="services/usersService.js"></script>
+    <script type="text/javascript" src="services/carService.js"></script>
+    <script type="text/javascript" src="services/uploadsService.js"></script>
+
+
+</head>
+<body>
+
+<header>
+    <nav class="col-sm-12" ng-include="'components/header/header.html'"></nav>
+</header>
+<div class="clearfix"></div>
+<div class="wrapper">
+    <ul class="nav nav-tabs" ng-controller="TabsCtrl">
+        <li ng-class="tabClass(tab)" ng-repeat="tab in tabs" tab="tab"><a href="{{tab.link}}" ng-click="setSelectedTab(tab)">{{tab.label}}</a></li>
+    </ul>
+    <div class="col-sm-12 main-content" ng-view>
+
+    </div>
+</div>
+
+</body>
+</html>

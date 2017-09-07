@@ -1,0 +1,11 @@
+{
+  "name": "tradecore-task",
+  "version": "1.0.0",
+  "author": "Marko Stanicic",
+  "devDependencies": {
+    "jquery": "*",
+    "normalize.css": "*",
+    "bootstrap": "*"
+  }
+
+}

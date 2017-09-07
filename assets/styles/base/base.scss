@@ -1,0 +1,100 @@
+html {
+	height: 100%;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+	max-width: 100%;
+    overflow-x: hidden;
+	font-family: 'LatoWeb', sans-serif;
+    background-color: $lightgrey;
+    text-rendering: optimizelegibility;
+    font-weight: 300;
+    font-size: 100%!important;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('../assets/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../assets/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.clearfix {
+	clear: both;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+    color: #fff;
+	a:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+p {
+	margin: 0;
+	font-size: 11px;
+	color: $text;
+}
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	color: $text;
+}
+h2 {}
+h3 {
+	font-size: 13px;
+	color: $darkgrey;
+}
+.no-padding { padding: 0!important; }
+.padding-top { padding-top: 50px; }
+.padding-bottom { padding-bottom: 50px; }
+.text-center { text-align: center; }
+.align-left { text-align: left!important; }
+.align-right { text-align: right!important; }
+.clearfix { clear: both; }
+.left { float: left!important; }
+.right { float: right!important; }
+
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12 {
+	padding: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.w30 {
+	width: 30%;
+}
